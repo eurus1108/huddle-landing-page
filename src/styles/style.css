@@ -51,12 +51,25 @@ a {
   position: relative;
 }
 
+.h-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 37.3rem;
+  background-image: url("../assets/bg-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .header {
-  padding: 3.2rem 1.2rem 0;
+  padding: 3.2rem 3.5rem 0;
 }
 
 .header__logo {
-  max-width: 17.4rem;
+  max-width: 12.9rem;
 }
 
 .header__logo img,
@@ -71,7 +84,7 @@ a {
 }
 
 .hero__img-container {
-  margin: 6rem 0;
+  margin: 6.1rem 0;
   max-width: 70.9rem;
 }
 
@@ -98,11 +111,12 @@ a {
 
 .button {
   display: inline-block;
-  padding: 1.2rem 1.2rem 1rem;
+  padding: 1.1rem 1.2rem 1rem;
   width: 100%;
-  font-size: var(--font-size-200);
+  font-family: var(--font-family-headings);
+  font-size: var(--font-size-100);
   text-align: center;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.005em;
   color: var(--color-text-visualization);
   background-color: var(--color-background-button);
   border-radius: 99rem;
@@ -118,6 +132,7 @@ a {
 .footer {
   display: inline-block;
   width: 100%;
+  padding-bottom: 3.5rem;
 }
 
 .footer__social,
