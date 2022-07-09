@@ -182,3 +182,106 @@ a {
     height: 1.47rem;
   }
 }
+
+@media only screen and (min-width: 786px) {
+  .h-wrapper {
+    height: 100vh;
+  }
+
+  .h-wrapper::before {
+    height: 100vh;
+    background-image: url("../assets/bg-desktop.svg");
+    background-size: auto;
+  }
+
+  .header {
+    padding: 5.3rem 7rem 0;
+  }
+
+  .header__logo {
+    max-width: 21.5rem;
+  }
+
+  .hero {
+    margin: 8.7rem 0 2.1rem;
+  }
+
+  .hero__container {
+    display: flex;
+  }
+
+  .hero__container .left {
+    width: 74.4rem;
+  }
+
+  .hero__img-container {
+    margin: 0;
+    margin-left: auto;
+    width: 70.9rem;
+  }
+
+  .hero__container .right {
+    margin-left: 5.3rem;
+    padding-top: 4.3rem;
+    max-width: 51rem;
+    width: 100%;
+  }
+
+  .hero__text-content {
+    text-align: left;
+  }
+
+  .hero__text-content .headline {
+    margin-bottom: 2rem;
+    font-size: var(--font-size-500);
+  }
+
+  .hero__text-content .body {
+    font-size: var(--font-size-300);
+    line-height: 2.7rem;
+  }
+
+  .hero__element__link {
+    margin: 0;
+  }
+
+  .button {
+    padding: 1.3rem 1rem 1.6rem;
+    font-size: var(--font-size-300);
+  }
+
+  .footer {
+    padding: 0 8rem;
+  }
+
+  .footer__social {
+    justify-content: flex-end;
+  }
+
+  .footer__social .social-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .footer__social .social-icon:not(:last-child) {
+    margin-right: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 1124px) {
+  .hero__img-container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .h-wrapper::before {
+    background-size: cover;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
